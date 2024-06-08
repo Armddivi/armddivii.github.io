@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> LOTUSE BOYES </title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Price</title>
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+        "symbols": [
+          {
+            "description": "",
+            "proName": "OANDA:XAUUSD"
+          },
+          {
+            "description": "",
+            "proName": "FX_IDC:EURAED"
+          },
+          {
+            "description": "",
+            "proName": "FX:EURUSD"
+          },
+          {
+            "description": "",
+            "proName": "FX_IDC:CADAED"
+          },
+          {
+            "description": "",
+            "proName": "FX_IDC:EURAED"
+          }
+        ],
+        "showSymbolLogo": true,
+        "isTransparent": false,
+        "displayMode": "adaptive",
+        "colorTheme": "dark",
+        "locale": "en"
+      }
+        </script>
+      </div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+           
+            background-image: url('trading.jpg');
+            background-size: 100%;
+           
+            background-position: center; 
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .widget {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            max-width: 600px; /* Limiting the width for better layout */
+            flex: 1; /* Distribute space evenly */
+        }
+        .widget h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .widget iframe {
+            width: 100%;
+            height: 400px; /* Adjust height as needed */
+        }
+        .center-widget {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- TradingView Market Ticker Widget -->
+        <div class="widget">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+            
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+                {
+                "width": "100%",
+                "height": 550,
+                "symbolsGroups": [
+                  {
+                    "name": "Indices",
+                    "originalName": "Indices",
+                    "symbols": [
+                      {
+                        "name": "FX_IDC:EURAED"
+                      },
+                      {
+                        "name": "OANDA:XAUUSD"
+                      },
+                      {
+                        "name": "FX_IDC:CADAED"
+                      },
+                      {
+                        "name": "FX:EURUSD"
+                      },
+                      {
+                        "name": "FX_IDC:CADAED"
+                      },
+                      {
+                        "name": "SAXO:USDAED"
+                      }
+                    ]
+                  }
+                ],
+                "showSymbolLogo": true,
+                "isTransparent": false,
+                "colorTheme": "dark",
+                "locale": "en",
+                "backgroundColor": "#131722"
+              }
+                </script>
+            </div>
+        </div>
+        <!-- TradingView Gold Price Quote Widget -->
+         <div class="center">
+        <div class="widget">
+            <h2></h2>
+            
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                
+                </div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                {
+                    "symbol": "OANDA:XAUUSD",
+                    "width": 350,
+                    "isTransparent": false,
+                    "colorTheme": "dark",
+                    "locale": "en"
+                }
+                </script>
+                <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+    {
+    "symbol": "FX_IDC:GBPAED",
+    "width": 350,
+    "isTransparent": false,
+    "colorTheme": "dark",
+    "locale": "en"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+                <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+    {
+    "symbol": "FX_IDC:CADAED",
+    "width": 350,
+    "isTransparent": false,
+    "colorTheme": "dark",
+    "locale": "en"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+                <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+    {
+    "symbol": "FX:EURUSD",
+    "width": 350,
+    "isTransparent": false,
+    "colorTheme": "dark",
+    "locale": "en"
+  }
+    </script>
+    
+  </div>
+  <!-- TradingView Widget END -->
+            </div>
+        </div>
+    </div>
+    
+        <!-- TradingView Gold Price Chart Widget -->
+        
+</body>
+</html>
